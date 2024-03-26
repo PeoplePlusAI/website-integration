@@ -4,12 +4,12 @@ const path = require('path');
 
 // Environment variables
 const GITHUB_API = 'https://api.github.com';
-const ORG_NAME = process.env.GITHUB_ORG_NAME;
+const ORG_NAME = process.env.ORG_NAME;
 const OUTPUT_DIR = path.join(__dirname, '../content/posts');
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+const TOKEN = process.env.TOKEN;
 
 const headers = {
-    'Authorization': `token ${GITHUB_TOKEN}`, // Using the GitHub token from environment variable
+    'Authorization': `token ${TOKEN}`, // Using the GitHub token from environment variable
     'Accept': 'application/vnd.github+json'
 };
 

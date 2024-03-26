@@ -6,7 +6,7 @@ on:
   workflow_dispatch:  # Allows manual triggering
 
 env:
-  GITHUB_ORG_NAME: 'PeoplePlusAI' # Replace with your GitHub organization name
+  ORG_NAME: 'PeoplePlusAI' # Replace with your GitHub organization name
   OUTPUT_DIR: 'content/posts'                 # Set the output directory for the fetched READMEs
 
 jobs:
@@ -29,8 +29,8 @@ jobs:
     - name: Fetch READMEs
       env:
         OUTPUT_DIR: 'content/posts'
-        GITHUB_ORG_NAME: 'PeoplePlusAI'
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use a secret for the GitHub token
+        ORG_NAME: 'PeoplePlusAI'
+        TOKEN: ${{ secrets.TOKEN }}  # Use a secret for the GitHub token
       run: |
         node ./scripts/fetch-readmes.js
 
