@@ -1,0 +1,44 @@
+name: Update READMEs and Push Changes
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Run daily at midnight
+  workflow_dispatch:  # Allows manual triggering
+
+env:
+  GITHUB_ORG_NAME: 'PeoplePlusAI' # Replace with your GitHub organization name
+  OUTPUT_DIR: 'content/posts'                 # Set the output directory for the fetched READMEs
+
+jobs:
+  fetch-and-update-readmes:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    - name: Install dependencies
+      run: |
+        npm install
+
+    - name: Fetch READMEs
+      env:
+        OUTPUT_DIR: 'content/posts'
+        GITHUB_ORG_NAME: 'PeoplePlusAI'
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use a secret for the GitHub token
+      run: |
+        node ./scripts/fetch-readmes.js
+
+    - name: Commit and push if there are changes
+      run: |
+        git config --global user.email "actions@github.com"
+        git config --global user.name "GitHub Actions"
+        git add .
+        git commit -m "Update READMEs" -a || echo "No changes to commit"
+        git push
+

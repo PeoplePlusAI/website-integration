@@ -1,0 +1,54 @@
+# gitignore for a hugo project
+
+# Hugo specific
+/public/
+/resources/_gen/
+/hugo_stats.json
+
+# Dependency directories
+/node_modules/
+/vendor/
+
+# Local development
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.idea/
+*.sublime-project
+*.sublime-workspace
+.vscode/
+*.swp
+*.swo
+*~
+
+# Build output
+/dist/
+/tmp/
+
+# Log files
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency files
+package-lock.json
+yarn.lock
+
+# Backup files
+*.bak
+*.tmp
+
+# Other source repositories
+.git/
