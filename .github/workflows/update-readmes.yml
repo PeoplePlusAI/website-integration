@@ -32,7 +32,7 @@ jobs:
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
-        git remote set-url origin https://${{ secrets.TOKEN }}@github.com/your-username/your-repository.git
+        git remote set-url origin https://${{ secrets.TOKEN }}@github.com/PeoplePlusAI/website-integration.git
 
     - name: Commit and push changes
       run: |
