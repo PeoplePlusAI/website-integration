@@ -5,12 +5,12 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const GITHUB_API = 'https://api.github.com';
-const ORG_NAME = process.env.GITHUB_ORG_NAME;
+const ORG_NAME = process.env.ORG_NAME;
 const OUTPUT_DIR = process.env.OUTPUT_DIR ? path.join(process.cwd(), process.env.OUTPUT_DIR) : path.join(__dirname, '../content/posts');
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+const TOKEN = process.env.TOKEN;
 
 const headers = {
-    'Authorization': `token ${GITHUB_TOKEN}`,
+    'Authorization': `token ${TOKEN}`,
     'Accept': 'application/vnd.github+json'
 };
 
