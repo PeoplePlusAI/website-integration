@@ -1,6 +1,6 @@
-const fetch = require('node-fetch');
-const fs = require('fs');
-const path = require('path');
+import fetch from 'node-fetch';
+import fs from 'fs';
+import path from 'path';
 
 // Environment variables
 const GITHUB_API = 'https://api.github.com';
