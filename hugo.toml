@@ -1,4 +1,4 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'People+AI Projects'
-theme = "hugo-book"
+
