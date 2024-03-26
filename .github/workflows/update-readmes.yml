@@ -7,7 +7,11 @@ on:
 
 env:
   ORG_NAME: 'PeoplePlusAI' # Replace with your GitHub organization name
-  OUTPUT_DIR: 'content/posts'                 # Set the output directory for the fetched READMEs
+  OUTPUT_DIR: 'content/posts'
+  
+permissions:
+  contents: write
+  issues: read # Set the output directory for the fetched READMEs
 
 jobs:
   fetch-and-update-readmes:
