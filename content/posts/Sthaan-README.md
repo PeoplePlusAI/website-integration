@@ -9,7 +9,12 @@
 
 ## The problem 
 
-<img width="722" alt="image" src="https://github.com/PeoplePlusAI/Sthan/assets/151424479/2286235b-9f78-4a57-9acb-fceeaaef0ebc">
+**India loses $10-14 annually due to Unstructured Addresses and last-mile delivery is affected significantly [[Source](https://www.researchgate.net/publication/323164874_Economic_Impact_of_Discoverability_of_Localities_and_Addresses_in_India)]**
+
+<img width="1033" alt="Blume Indus Valley Report screenshot" src="https://github.com/PeoplePlusAI/Sthaan/assets/151424479/f6a631b3-292b-496d-960d-45e6201a957f">
+Image Source: [Indus Valley Annual Report 2022](https://blume.vc/reports/understanding-india-the-indus-valley-annual-report-2022)
+
+
 
 
 To solve this problem, we are building "Sthaan". 
@@ -44,9 +49,9 @@ This standardization needs a system of incentives to encourage:
 We are looking for enthusiastic volunteers who can own pieces of this design puzzle. 
 
 if you have expertise and/or interest in:
-1. **Business Case Development**: Help us understand the pain points of logistics players, sellers, and buyers. Identify use cases and early adopters of Sthaan.
-2. **Technical Architecture**: Contribute to designing a system that delivers a positive user experience.
-3. **Policy Development:** As we aim to make Sthaan a benchmark in its domain, developing a robust policy framework is essential. We need volunteers who can help craft policies that ensure compliance, ethical standards, and user protection. Your knowledge in legal, regulatory, or policy writing will guide Sthaan towards sustainable and responsible growth.
+1. **Business Case Development**: Assist in crafting business cases for implementing Sthaan across various sectors, including E-Commerce, Mobility, and Financial Services. Your input will help showcase Sthaan's versatility and value.
+2. **Technical Architecture**: Help design Sthaan's technical architecture with a focus on Digital Public Infrastructure principles, shaping a system that's reliable, scalable, and user-friendly.
+3. **Policy Development**: Contribute to creating a strong policy framework that upholds compliance, data privacy, and ethical standards, ensuring Sthaan operates responsibly and securely.
 
 For more details on joining the initiative please refer [[here](https://peopleplus.ai/volunteer)] and for any queries reach out to sreeram@peopleplus.ai 
 
